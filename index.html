@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Build a 25-5 clock</title>
+</head>
+
+<body class="text-center container">
+
+
+    <div class="container-fluid" style="width: 70%;margin-top: 80px;">
+        <h1>25+5 Clock</h1>
+        <div class="row mt-5 ">
+            <div class="text-center  row">
+
+                <div class="col border ms-2 session border-warning rounded shadow p-3">
+                    <h2 id="session-label" class="mb-3">Session Length</h2>
+                    <div class="row">
+                        <button class="col btn btn-dark" id="session-increment"><i class="fas fa-arrow-up"></i></button>
+                        <h3 class="col changeable ms-1 mt-1" id="session-length">25</h3>
+                        <button class="col btn btn-dark" id="session-decrement"><i
+                                class="fas fa-arrow-down"></i></button>
+                    </div>
+                </div>
+                <div class="col  border ms-2 break border-warning shadow rounded p-3">
+                    <h2 id="break-label" class="mb-3">Break Length</h2>
+                    <div class="row">
+                        <button class="col btn btn-dark" id="break-increment"><i class="fas fa-arrow-up"></i></button>
+                        <h3 class="col changeable ms-1 mt-1" id="break-length">5</h3>
+                        <button class="col btn btn-dark" id="break-decrement"><i class="fas fa-arrow-down"></i></button>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="border bg-info mt-4 shadow text-dark border-warning rounded-pill ">
+                <h2 id="timer-label">Session</h2>
+                <h1 id="time-left">25:00</h1>
+
+            </div>
+            <div class="row mt-5">
+
+                <button class="btn btn-dark col btn-sm shadow" id="start_stop"><i class="fas fa-play fa-2x"></i><i
+                        class="fa fa-pause fa-2x d-none"></i></button>
+                <button class="btn btn-dark col btn-sm ms-4 shadow" id="reset"><i
+                        class="fas fa-sync fa-2x"></i></button>
+            </div>
+            <audio id="beep" src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/audio/BeepSound.wav"
+                ></audio>
+            
+
+        </div>
+            <div class="sizing d-flex">
+              
+                <button class="btn btn-dark btn-sm volume m-2"><i class="fas fa-volume-mute"></i></button>
+
+                <button class="btn btn-dark col btn-sm shadow m-2" onclick="toggleFullScreen()" id="fullScreen"><i class="fas fa-expand"></i></button>
+            </button>
+
+            </div>
+     
+
+          
+
+
+
+    </div>
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.5.4/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+    <script src="ui.js"></script>
+</body>
+
+</html>

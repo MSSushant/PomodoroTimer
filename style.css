@@ -1,0 +1,25 @@
+body{
+    width: 100vh;
+    margin-top: 0px;
+    background-color:#1289A7;
+    color: white;
+}
+.author {
+    text-align: center;
+    font-family: Share Tech Mono, sans;
+    margin-top: 15px;
+    font-size: 14px;
+    color: #f2f2f2;
+  }
+  .author a {
+    text-decoration: none;
+    color:white;
+    line-height: 26px;
+  }
+  
+  .sizing{
+    position: absolute;
+    top: 20px;
+    left: 90%;
+  }
+
